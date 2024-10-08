@@ -1,0 +1,93 @@
+
+*{
+    /* border:  1px solid blue; */
+}
+
+body{
+    background-color: #eee;
+    font-family: sans-serif;
+}
+.container{
+    width: 45%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+.container .head{
+   padding-left: 30px;
+   background-color: white;
+   padding-top: 1px;
+   padding-bottom: 1px;
+  
+}
+.container .info {
+    display: flex;
+}
+.container .info > div{
+    /*width: 50%; ...the same as flex:1*/
+    flex: 1; 
+    color: white;
+}
+.container .info > div:nth-of-type(1){
+    background-color:hsl(179, 62%, 43%);
+    padding: 20px;
+    font-family: system-ui;
+   
+}
+.container .info > div:nth-of-type(2){
+    background-color:hsl(179, 55%, 49%);
+    padding: 20px;
+    font-family: system-ui;
+    
+}
+
+.container .head > h4{
+    color: hsl(71, 73%, 54%); 
+}
+.container .head > h2
+    {
+color: hsl(179, 62%, 43%);
+    }
+    .container .head > p{
+        color: hsl(218, 22%, 67%);
+        line-height: 1.8; /* height between lines*/
+        font-size: 14px;
+    }
+    .container .info > div:nth-of-type(1) >span:nth-of-type(1){
+        font-size: 36px;
+        font-weight: inherit; 
+        font-family: sans-serif;
+    }
+    .container .info > div:nth-of-type(1) >span:nth-of-type(2){
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.541);
+        display: inline-block; /* to be able to modifited without modifier all block-element*/
+        transform: translate3d(10px, -10px, 10px);
+    }
+    .container .info > div:nth-of-type(1) > h4{
+     font-size: 16px;
+    }
+    .container .info > div:nth-of-type(1) button{
+        width: 100%;
+        margin: auto;
+        color: white;
+        display: block;
+        padding:20px;
+        background-color: hsl(71, 73%, 54%);
+        border-radius: 10px;
+        border-style: none;
+    }
+    @media (max-width: 1212px) {
+        .container .info{
+            display: block;
+        }
+    }
+   /* media queries breakpoints:
+Breakpoint  Class infix	 Dimensions
+X-Small	           None	     <576px
+Small	           sm	     ≥576px
+Medium             md        ≥768px
+Large	           lg	     ≥992px
+Extra large	       xl	     ≥1200px
+Extra extra large  xxl	     ≥1400px */
